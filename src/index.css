@@ -1,0 +1,98 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+
+    --accent: 12 6.5% 15.1%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 85.7% 97.3%;
+
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    background-image: 
+      radial-gradient(at 50% 0%, rgba(var(--media-anime), 0.1) 0px, transparent 50%),
+      radial-gradient(at 100% 0%, rgba(var(--media-comics), 0.1) 0px, transparent 50%),
+      radial-gradient(at 0% 50%, rgba(var(--media-novels), 0.1) 0px, transparent 50%),
+      radial-gradient(at 80% 50%, rgba(var(--media-magazines), 0.1) 0px, transparent 50%),
+      radial-gradient(at 50% 100%, rgba(var(--media-cartoons), 0.2) 0px, transparent 50%);
+    background-attachment: fixed;
+  }
+}
+
+@layer components {
+  .media-card {
+    @apply relative overflow-hidden rounded-lg transition-all duration-300 hover:scale-105;
+    box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .media-card img {
+    @apply w-full h-full object-cover transition-transform duration-500;
+  }
+  
+  .media-card:hover img {
+    @apply scale-110;
+  }
+  
+  .media-card-overlay {
+    @apply absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent 
+           flex flex-col justify-end p-4 opacity-0 transition-opacity duration-300;
+  }
+  
+  .media-card:hover .media-card-overlay {
+    @apply opacity-100;
+  }
+
+  .comics-glow {
+    box-shadow: 0 0 20px rgba(255, 76, 76, 0.4);
+  }
+  
+  .anime-glow {
+    box-shadow: 0 0 20px rgba(76, 122, 255, 0.4);
+  }
+  
+  .novels-glow {
+    box-shadow: 0 0 20px rgba(255, 183, 76, 0.4);
+  }
+  
+  .magazines-glow {
+    box-shadow: 0 0 20px rgba(76, 255, 183, 0.4);
+  }
+  
+  .cartoons-glow {
+    box-shadow: 0 0 20px rgba(183, 76, 255, 0.4);
+  }
+}
