@@ -1,13 +1,32 @@
-# React + Vite
+# Media-Verse 📚✨  
+An immersive platform to explore Comics, Anime, Novels, Magazines, and Cartoons — built with a modern front-end stack.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🌐 **Live Demo:** [Click to Visit](https://davidraj1510.github.io/Media-Verse-Comic-Anime-Novel-Magazine-Cartoon/)
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 🧭 Smooth navigation using **React Router DOM** with `HashRouter`
+- 🎨 Modern and responsive UI using **Tailwind CSS** & **ShadCN UI**
+- 🖼️ Rich visuals with **Three.js (via React Three Fiber)**
+- 💡 Iconography using **Lucide React**
+- 💻 Built with **React + TypeScript** for strong typing and scalability
+- 🔗 Deployed via **GitHub Pages**
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
 
+## 🛠️ Tech Stack
+
+| Tech               | Description                               |
+|--------------------|-------------------------------------------|
+| **React**          | JavaScript library for building UIs       |
+| **TypeScript**     | Typed superset of JavaScript              |
+| **React Router DOM** | Navigation between different views      |
+| **HashRouter**     | Enables routing for GitHub Pages          |
+| **Tailwind CSS**   | Utility-first CSS framework               |
+| **ShadCN UI**      | Accessible and styled component library   |
+| **Lucide React**   | Beautiful & consistent icon set           |
+| **React Three Fiber** | React renderer for Three.js            |
+
+---
